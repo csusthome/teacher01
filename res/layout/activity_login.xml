@@ -2,68 +2,46 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDE4D6" >
+    android:background="#F0FFFF" >
 
     <RelativeLayout
         android:id="@+id/loginTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@drawable/top_bar_bg" >
+         >
 
         <ImageView
             android:id="@+id/loginClose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:paddingLeft="10dp"
-            android:src="@drawable/icon_close_large" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="SignLogin"
-            android:textColor="#ffffff"
-            android:textSize="18dp" />
+            android:paddingLeft="10dp"
+            android:paddingTop="40dp"
+            android:src="@drawable/register_logo" />
+	</RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/security_head_button"
-            android:paddingRight="10dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="登陆"
-                android:textColor="#ffffff" />
-        </RelativeLayout>
-    </RelativeLayout>
-
+    <LinearLayout
+         android:orientation = "vertical"
+         android:id="@+id/cut_of_rule"
+         android:layout_width="match_parent"
+         android:layout_below="@id/loginTop"
+         android:layout_height="15dp">
+     </LinearLayout>
+     
     <RelativeLayout
         android:id="@+id/login_mid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/loginTop"
         android:paddingLeft="30dp"
         android:paddingRight="20dp"
-        android:paddingTop="30dp" >
+        android:layout_below="@+id/cut_of_rule" >
 
         <LinearLayout
             android:id="@+id/linear_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/security_row_center"
             android:orientation="vertical" >
 
             <LinearLayout
@@ -114,6 +92,28 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                 >
+            </LinearLayout>
+            
+            <Button
+			    android:id="@+id/Ledit_login"
+			    android:layout_width="match_parent"
+			    android:layout_height="30dp"
+			    android:layout_below="@id/Ledit_password"
+			    android:layout_marginLeft="1dp"
+			    android:layout_marginRight="1dp"
+			    android:background="#B0E0E6"
+			    android:hint="登陆"
+			    android:paddingBottom="3dp"
+			    android:paddingLeft="3dp"
+			    android:paddingRight="3dp"
+			    android:paddingTop="3dp" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginLeft="1dp"
                 android:layout_marginRight="1dp"
@@ -127,8 +127,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/linear_top"
             android:layout_centerHorizontal="true"
-            android:drawableLeft="@drawable/security_row_line"
-            android:drawableRight="@drawable/security_row_line"
             android:paddingTop="10dp"
             android:text="或"
             android:textColor="#9E8C7B" />
@@ -188,8 +186,7 @@
         android:id="@+id/login_down"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#F9F8F1" >
+        android:layout_alignParentBottom="true">
 
         <TextView
             android:id="@+id/text_xuyao"
@@ -218,6 +215,6 @@
         android:layout_width="match_parent"
         android:layout_height="10dp"
         android:layout_above="@id/login_down"
-        android:background="@drawable/security_row_sign_bg" />
+        />
 
 </RelativeLayout>

@@ -36,7 +36,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical" 
+            android:background="#F0FFFF">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -46,7 +47,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="matrix"
-                    android:src="@drawable/one_profile_bg1" />
+                     />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -60,15 +61,15 @@
                         android:layout_width="130dp"
                         android:layout_height="130dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/default_avatar_lead" />
+                        android:src="@drawable/default_users_avatar" />
                 </LinearLayout>
             </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:background="#ffffff"
+                android:layout_marginBottom="0dp"
+                android:background="#F0FFFF"
                 android:orientation="horizontal" >
 
                 <LinearLayout
@@ -76,7 +77,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/cab_background_top_light"
                     android:orientation="horizontal" >
 
                     <TextView
@@ -103,14 +103,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#ffffff"
+                    android:background="#F0FFFF"
                     android:gravity="center_vertical"
                     android:orientation="horizontal" >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:background="#ffffff"
+                        android:background="#F0FFFF"
                         android:gravity="center_vertical"
                         android:paddingLeft="5dp"
                         android:text="　　姓名 　"
@@ -159,14 +159,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#ffffff"
+                    android:background="#F0FFFF"
                     android:gravity="center_vertical"
                     android:orientation="horizontal" >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:background="#ffffff"
+                        android:background="#F0FFFF"
                         android:gravity="center_vertical"
                         android:paddingLeft="5dp"
                         android:text="　　用户名 　"
@@ -191,14 +191,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#ffffff"
+                    android:background="#F0FFFF"
                     android:gravity="center_vertical"
                     android:orientation="horizontal" >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:background="#ffffff"
+                        android:background="#F0FFFF"
                         android:gravity="center_vertical"
                         android:paddingLeft="5dp"
                         android:text="　　密码 　"
@@ -216,8 +216,9 @@
 
                 <RelativeLayout
                     android:id="@+id/next"
-                    android:layout_width="match_parent"
+                    android:layout_width="160dp"
                     android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
                     android:background="@drawable/security_row_button" >
 
                     <TextView

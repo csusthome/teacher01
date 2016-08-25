@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -38,7 +39,8 @@ public class LoginActivity extends Activity implements OnClickListener{
 	
 	//定义相应控件的引用
 	private ImageView mClose;
-	private RelativeLayout mLogin,mWeibo,mQQ;
+	private RelativeLayout mWeibo,mQQ;
+	private Button mLogin;
 	private EditText mName,mPassword;
 	private TextView mRegister;
 	//定义值，用于存储用户名密码
@@ -87,7 +89,7 @@ public class LoginActivity extends Activity implements OnClickListener{
 		
 		//用于与activity_login的控件一一对应
 		mClose = (ImageView) findViewById(R.id.loginClose);
-		mLogin = (RelativeLayout) findViewById(R.id.login);
+		mLogin = (Button) findViewById(R.id.Ledit_login);
 		mWeibo = (RelativeLayout) findViewById(R.id.button_weibo);
 		mQQ = (RelativeLayout) findViewById(R.id.buton_qq);
 		mName = (EditText) findViewById(R.id.Ledit_name);
@@ -115,9 +117,9 @@ public class LoginActivity extends Activity implements OnClickListener{
 		switch (mId) {
 		case R.id.loginClose:
 			//关闭页面
-			finish();
+			//finish();
 			break;
-		case R.id.login:
+		case R.id.Ledit_login:
 			//登录按钮，获得并存储相应的值
 			NameValue = mName.getText().toString();
 			PasswordValue = mPassword.getText().toString();
